@@ -1,0 +1,35 @@
+.list-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+}
+.product-list-card{
+    margin:2%;
+    width:20%;
+    border-radius: 15px;
+    border: 1px solid #46b0cd;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition-duration: 0.3s;
+    background-color: aliceblue;
+
+
+}
+
+.product-list-card:hover {
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+
+}
+.product-list-desc{
+}
+
+.product-list-name{
+}
+
+.product-list-price{
+}
