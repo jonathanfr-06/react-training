@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 25px;
 }
 
 li{
@@ -16,20 +17,33 @@ li{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition-duration: 0.3s;
     background-color: aliceblue;
-
-
 }
 
 .product-list-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition-duration: 0.3s;
-
 }
-.product-list-desc{
-}
-
 .product-list-name{
+    color:rgb(90, 0, 0);
+}
+ .product-list-desc{
+    margin: 25px;
+    font-size: 15px;
+}
+.product-list-btn{
+    background-color:#006BC0;
+    margin: 10px;
+    border: 1px solid #2c1010;
+    border-radius: 5px;
+    transition-duration: 1s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.product-list-btn:hover{
+    background-color: rgb(59, 2, 229);
+    transition-duration: 1s;
+    align-self: right;
 }
 
 .product-list-price{
-}
+
+} 
