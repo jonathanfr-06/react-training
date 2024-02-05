@@ -1,26 +1,35 @@
 .welcome-block{
 background-color:#0040A0;
-width: 60%;
+width: 80%;
 border:2px solid white;
 border-radius: 15px;
 display: flex;
 flex-direction: row;
-align-items: center;
 justify-content: center;
 flex-wrap: wrap;
-margin-right:20%;
-margin-left:20%;
-margin-top:5%;
+max-height:450px;
+margin-right:10%;
+margin-left:10%;
+margin-top:35px;
 margin-bottom:5%;
 padding:30px;
-}
+/* background-image: url('../../../images/blocks/montain.avif'); */
+background-size:cover;
+background-position: center 25%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+overflow: hidden;
 
+}
+.carrousel-image img{
+    width: 100%; /* Pour s'assurer que l'image remplit la largeur du conteneur */
+    height: auto; /* Pour maintenir le ratio d'aspect de l'image */
+    object-fit: cover; }
 .welcome-title{
-    color:white;
+    color:rgb(106, 20, 20);
 }
 
 .welcome-text{
-    color:white;
+    color:rgb(149, 18, 18);
     margin-left: 30px;
     margin-right: 30px;
 }
