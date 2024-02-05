@@ -1,19 +1,19 @@
 import '../../../src/assets/css/components/reusables/header.css'
-import Button from '../../components/utils/buttons'
 import Searchbar from '../../components/utils/searchbar'
-
+import logo from '../../assets/images/reusables/logo192.png'
 function Header() {
     return (
         <div className="header">
             <nav className='navbar'>
+            <img class='image-logo' src={logo} alt='logo' />
                 <ul className='list_link'>
-                    <li>Home</li>
-                    <li>Categories</li>
-                    <li>Auth</li>
+                    <li>Accueil</li>
+                    <li>Catégories</li>
+                    <li>S'inscrire</li>
+                    <li>Connexion</li>
                 </ul>
             </nav>       
                 <Searchbar />
-                <Button />
          </div>
     )
 }
