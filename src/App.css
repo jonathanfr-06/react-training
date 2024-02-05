@@ -11,9 +11,9 @@
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
 
-body{
+/* body{
   height: 100%;
-}
+} */
 .App {
   text-align: center;
 }

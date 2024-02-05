@@ -13,6 +13,6 @@
     flex-direction: row;
 }
 
-li{
+.list-footer-links li{
     padding:10px;
 }

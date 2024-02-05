@@ -8,7 +8,7 @@ function Welcome() {
 
     return (
         <div class='welcome-block'>
-            <Carousel class='carousel-block' height="450px" dynamicHeight={true} autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={true} showStatus={false} interval={5000}>
+            <Carousel className='carousel-block' max-height="450px" dynamicHeight={true} autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={true} showStatus={false} interval={5000}>
             <img className='carrousel-image' src={red} alt='Sunset' />
             <img className='carrousel-image' src={blue} alt='Fjord mountains' />
             </Carousel>
