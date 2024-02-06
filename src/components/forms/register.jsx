@@ -39,7 +39,7 @@ function Register() {
                 <input type="password" name="password" required/>
                 <label htmlFor="confirm-password">Confirmer mot de passe *</label>
                 <input type="password" name="confirm-password" required />
-               <div className="div-checkbox"> <input type="checkbox" className='confirm-checkbox-register' name="confirm-cgi"  /> *J'accepte les conditions générales blablabla</div>
+               <div className="div-checkbox"> <input type="checkbox" className='confirm-checkbox-register' name="confirm-cgi"  /> <p>*J'accepte les conditions générales blablabla</p></div>
                 <button type="submit">S'inscrire</button>
             </form>
         </div>

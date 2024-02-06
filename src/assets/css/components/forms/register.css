@@ -1,8 +1,8 @@
 .form-register{
     margin-top: 60px;
     display: flex;
-    background-color: #FAFAFA    ;
-    flex-direction: column;
+    background-color: #0040A0;
+    background-image: linear-gradient(to left bottom, #1a70ef, #1769e6, #1363dd, #0f5cd4, #0a56cb, #0752c4, #044ebe, #014ab7, #0147b1, #0045ab, #0042a6, #0040a0);    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40%;
@@ -10,7 +10,7 @@
     margin-right: 30%;
     padding:30px;
     border-radius: 15px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 251, 251);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
@@ -18,7 +18,7 @@
     border-radius: 10px;
     width: 60%;
     margin:5px;
-    border:1px solid black;
+    /* border:1px solid black; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .form-register label{
-    color:black;
+    color:white;
     margin-top:5px;
     visibility: visible;
 }
@@ -37,12 +37,17 @@
 .register-title{
     margin-bottom: 15px;
     font-weight: 800;
+    color:white;
 }
 
 .div-checkbox{
     display: flex;
     margin-top:15px;
-    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    margin-left: 30%;
+    color:white;
 }
 .confirm-checkbox-register{
     height:15px;
