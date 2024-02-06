@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Notfound from './views/base/Notfound'
 import reportWebVitals from './reportWebVitals';
 
 import {
@@ -12,7 +13,8 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    errorElement: <Notfound />
   },
 ]);
 
