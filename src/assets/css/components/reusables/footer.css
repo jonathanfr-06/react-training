@@ -1,11 +1,13 @@
 .footer{
     background-color: #0040A0;
-    position: static;
+    position: fixed;
     display: flex;
     flex-direction: row;
     color: white;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    bottom: 0;
 }
 
 .list-footer-links{
