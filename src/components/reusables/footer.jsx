@@ -8,7 +8,7 @@ function Footer() {
                     <li>F.A.Q.</li>
                     <li>Copyright</li>
                     <li>Mentions Légales</li>
-                    <li>C.V.G.</li>
+                    <li>C.G.V.</li>
                 </ul>
          </div>
     )
