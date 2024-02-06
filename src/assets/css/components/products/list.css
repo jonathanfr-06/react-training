@@ -25,6 +25,7 @@ li{
 }
 .product-list-name{
     color:rgb(90, 0, 0);
+    font-family: 'Quicksand', sans-serif;
 }
  .product-list-desc{
     margin: 25px;

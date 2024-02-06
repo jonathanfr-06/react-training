@@ -46,6 +46,7 @@
 .list_link li {
     margin: 10px;
     color: aliceblue;
+    font-style: bold;
 }
 
 .search-bar{
