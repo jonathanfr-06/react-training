@@ -73,6 +73,10 @@ button{
 
 }
 
+.links{
+    text-decoration: none;
+    color: white;
+}
 button:hover{
     background-color: #2dd9d0;
     transition-duration: 0.3s;
