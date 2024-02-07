@@ -1,5 +1,6 @@
 .footer{
-    background-color: #0040A0;
+    background-image: linear-gradient(to left bottom, #1a70ef, #1769e6, #1363dd, #0f5cd4, #0a56cb, #0752c4, #044ebe, #014ab7, #0147b1, #0045ab, #0042a6, #0040a0);    flex-direction: column;
+    margin-top:40px;
     display: flex;
     flex-direction: row;
     color: white;
