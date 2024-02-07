@@ -14,6 +14,9 @@
 *{
   font-family: 'Quicksand', sans-serif;
 
+  *{
+    color:white;
+  }
 }
 /* body{
   height: 100%;
