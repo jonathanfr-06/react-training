@@ -3,14 +3,15 @@ import products  from '../../utils/products';
 
 function List() {
 
-    const listItems = products.map((product, i) => (
+    const listItems = products.map((product) => (
         <div class='product-list-card'>
             <h1 class='product-list-name'>{product.name.toUpperCase()}</h1>
-            <p class='product-list-desc'>{product.desc}</p>
-            <p class='product-list-price'>{product.price}€ </p>
+            <p className="product-list-category">{product.category}</p>
+            <p class='product-list-desc'>{product.desc} </p>
+            <p class='product-list-price'>Prix : {product.price} € </p>
             <button class='product-list-btn'>Details</button>
         </div>
-            )
+    )
 
     );
     return (
