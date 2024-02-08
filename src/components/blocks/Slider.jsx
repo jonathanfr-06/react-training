@@ -1,4 +1,4 @@
-import '../../../src/assets/css/components/blocks/welcome.css'
+import '../../../src/assets/css/components/blocks/slider.css'
 import red from '../../../src/assets/images/blocks/red.jpg'
 import blue from '../../../src/assets/images/blocks/blue.jpg'
 import night from '../../../src/assets/images/blocks/night.jpeg'
