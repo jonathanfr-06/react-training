@@ -18,7 +18,8 @@ li{
     border: 1px solid #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition-duration: 0.3s;
-    background-image: linear-gradient(to left bottom, #1a70ef, #1769e6, #1363dd, #0f5cd4, #0a56cb, #0752c4, #044ebe, #014ab7, #0147b1, #0045ab, #0042a6, #0040a0);    flex-direction: column;
+    background-image: linear-gradient(to left bottom, #1a70ef, #1769e6, #1363dd, #0f5cd4, #0a56cb, #0752c4, #044ebe, #014ab7, #0147b1, #0045ab, #0042a6, #0040a0);   
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -32,7 +33,6 @@ li{
     border-radius: 10px;
     margin-top:10px;
     margin-bottom:10px;
-
 }
 .product-list-card:hover {
     transform: scale(1.01);
