@@ -1,6 +1,8 @@
 import '../../../src/assets/css/components/products/list.css'
 import products  from '../../utils/products';
 import logo from '../../../src/assets/images/products/picture.png'
+import { Link } from 'react-router-dom';
+
 function List() {
 
     const listItems = products.map((product) => (
@@ -10,7 +12,7 @@ function List() {
             <p className="product-list-category">Catégorie : {product.category}</p>
             <p className='product-list-desc'>{product.desc} </p>
             <p className='product-list-price'>Prix : {product.price} € </p>
-            <button className='product-list-btn'>Details</button>
+            <Link to={`/product/${product.id}`} className='product-list-link'><button className='product-list-btn'>Details</button></Link>
         </div>
     )
     );

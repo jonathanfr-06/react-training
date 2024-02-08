@@ -47,6 +47,10 @@ li{
     font-size: 17px;
     margin:15px;
 }
+
+.product-list-link{
+    text-decoration: none;
+}
 .product-list-btn{
     background-color:#4E89FF;
     margin: 10px;

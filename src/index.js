@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Notfound from './views/base/Notfound';
 import RegisterView from './views/account/RegisterView';
+import Product from './views/products/Product';
 import Header from './components/reusables/header';
 import Footer from './components/reusables/footer';
 import reportWebVitals from './reportWebVitals';
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/register" element={<RegisterView />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
       <Footer />
