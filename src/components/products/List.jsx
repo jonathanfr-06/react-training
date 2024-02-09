@@ -4,7 +4,6 @@ import logo from '../../../src/assets/images/products/picture.png'
 import { Link } from 'react-router-dom';
 
 function List() {
-
     const listItems = products.map((product) => (
         <div class='product-list-card'>
             <h1 className='product-list-name'>{product.name.toUpperCase()}</h1>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import products from '../../utils/products';
-import logo from '../../../src/assets/images/products/picture.png'
+// import logo from '../../../src/assets/images/products/picture.png'
 import '../../../src/assets/css/components/products/SingleProduct.css'
 import { useParams } from 'react-router-dom';
 import getRandomPictures from '../../services/lorempicsum';
@@ -18,7 +18,7 @@ function SingleProduct() {
         getImg()
     },[]);
 
-    
+
     return (
         <div>
             {product ? (
