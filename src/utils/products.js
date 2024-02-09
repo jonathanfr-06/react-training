@@ -9,7 +9,4 @@ const products = [
     { id: 8, name: 'product 8', desc: 'Lorem ipsum dolor sit amet consectetur', category: "Test", price: 30 }
 ]
 
-
-
-
 export default products;
