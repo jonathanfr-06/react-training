@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import products from '../../utils/products';
-// import logo from '../../../src/assets/images/products/picture.png'
 import '../../../src/assets/css/components/products/SingleProduct.css'
 import { useParams } from 'react-router-dom';
-import getRandomPictures from '../../services/lorempicsum';
+import { getRandomPicture }from '../../services/lorempicsum';
+
 function SingleProduct() {
     const { id } = useParams();
     const product = products.find(product => product.id === parseInt(id)); // Use parseInt to convert id to integer
@@ -11,7 +11,7 @@ function SingleProduct() {
 
     async function getImg()
     {
-        let img = await getRandomPictures(400,400);
+        let img = await getRandomPicture(400,400);
         setImage(img);
     }
     useEffect(() => {
