@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Notfound from './views/base/Notfound';
 import RegisterView from './views/account/RegisterView';
+import LoginView from './views/account/LoginView';
 import AdminHome from './views/admin/Home';
 
 import Product from './views/products/Product';
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/register" element={<RegisterView />} />
+        <Route path="/login" element={<LoginView />} />
         <Route path="/admin" element={<AdminHome />} />
 
         <Route path="/product/:id" element={<Product />} />

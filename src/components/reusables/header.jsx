@@ -16,7 +16,9 @@ function Header() {
                     <li>
                         <Link to={"/register"} className='links'>S'inscrire</Link>
                     </li>
-                    <li>Connexion</li>
+                    <li>
+                    <Link to={"/login"} className='links'>Connexion</Link>
+</li>
                 </ul>
             </nav>
             <Searchbar />
