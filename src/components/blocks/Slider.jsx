@@ -30,7 +30,7 @@ function Slider() {
     }, []);
 
     return (
-        <div class='slider-block'>
+        <div className='slider-block'>
             <Carousel className='carousel-block' autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={true} showStatus={false} interval={5000}>
                 {images.map((image) => (
                     <img className='carrousel-image' src={image} alt='Sunset' />

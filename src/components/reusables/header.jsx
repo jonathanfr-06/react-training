@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header">
             <nav className='navbar'>
-                <Link to={'/'}><img class='image-logo' src={logo} alt='logo' /></Link>
+                <Link to={'/'}><img className='image-logo' src={logo} alt='logo' /></Link>
                 <ul className='list_link'>
                     <li>
                         <Link to={"/"} className='links'>Accueil</Link>
@@ -16,7 +16,9 @@ function Header() {
                     <li>
                         <Link to={"/register"} className='links'>S'inscrire</Link>
                     </li>
-                    <li>Connexion</li>
+                    <li>
+                    <Link to={"/login"} className='links'>Connexion</Link>
+</li>
                 </ul>
             </nav>
             <Searchbar />
