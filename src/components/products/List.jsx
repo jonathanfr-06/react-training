@@ -21,7 +21,7 @@ function List() {
     }, []);
 
     const listItems = products.map((product, i) => (
-        <div class='product-list-card'>
+        <div className='product-list-card'>
             <h1 className='product-list-name'>{product.name.toUpperCase()}</h1>
             <img className='product-list-img' src={imagesProduct[i]} alt={product.name} />
             <p className="product-list-category">Catégorie : {product.category}</p>
@@ -32,7 +32,7 @@ function List() {
     )
     );
     return (
-        <div class="list-card">
+        <div className="list-card">
             {listItems}
         </div>
     )
