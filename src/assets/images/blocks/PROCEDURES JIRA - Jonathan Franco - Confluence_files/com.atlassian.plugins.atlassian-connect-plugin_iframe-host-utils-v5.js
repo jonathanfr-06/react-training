@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.atlassian.plugins.atlassian-connect-plugin:iframe-host-utils-v5', location = 'v5/js/iframe/host/util.js' */
+window._AP=window._AP||{};_AP.util={escapeSelector:function(e){if(!e)throw new Error("No selector to escape");return e.replace(/[!"#$%&'()*+,.\/:;<=>?@[\\\]^`{|}~]/g,"\\$&")},isGlobalDefined:function(e){return void 0!==window[e]},awaitGlobal:function(e,r,t){t=t||100;if(_AP.util.isGlobalDefined(e))r(window[e]);else var a=setInterval((function(){if(_AP.util.isGlobalDefined(e)){clearInterval(a);r(window[e])}}),t)},getBooleanFeatureFlag:function(e){if(AJS&&AJS.DarkFeatures&&AJS.DarkFeatures.isEnabled&&AJS.DarkFeatures.isEnabled(e))return!0;var r=document.querySelector('meta[name="ajs-fe-feature-flags"]');if(!r)return!1;var t=r.getAttribute("content");if(!t)return!1;var a={};try{a=JSON.parse(t)}catch(e){return!1}return!(!a[e]||"boolean"!=typeof a[e].value)&&a[e].value}};
+}catch(e){WRMCB(e)};

@@ -1,0 +1,11 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.atlassian.plugins.atlassian-connect-plugin:confluence-navigator-routes-v5', location = 'v5/js/confluence/navigator/routes.js' */
+!function(e,t){"use strict";t(["ac/navigator/routes","ac/navigator/utils"],(function(t,n){var o=["page","blogpost","attachment","comment"],a=AJS.contextPath(),c=(AJS.Meta.get("enabled-dark-features"),n.hasContext),r=n.appendQueryParam,i={dashboard:"",contentedit:function(e,t){if(c(e,"contentId")){e.contentId;s(e.contentId,(function(e){var n=e.type;d(n)?t(a+"/display/"+e.space.key+"/customcontent/edit/"+e.id):!function(e){return-1!==o.indexOf(e)}(n)?AJS.error('Cannot navigate to "contentedit" target for content (ID='+e.id+"). Content type <"+n+"> is not supported."):t(a+"/pages/edit"+n+".action?pageId="+e.id)}))}},spacetools:"/spaces/viewspacesummary.action?key={spaceKey}",spaceview:"/spaces/{spaceKey}",userprofile:function(e,t){var n;c(e,"userAccountId")?n="/people/"+e.userAccountId:c(e,"username")&&(n=a+"/display/~"+e.username);n&&t(n)},contentview:function(e,t){c(e,"contentId")&&s(e.contentId,(function(n){var o=a+n._links.webui;c(e,"versionOverride")&&(o=r(o,"versionOverride",e.versionOverride));c(e,"embeddedContentRender")&&(o=r(o,"embeddedContentRender",e.embeddedContentRender));o&&t(o)}))},contentlist:function(e,t){var n=encodeURIComponent(e.spaceKey),o=e.contentType;"page"===o?t(a+"/spaces/"+n+"/pages"):"blogpost"===o?t(a+"/spaces/"+n+"/blog"):d(o)?t(a+"/display/"+n+"/customcontent/list/"+encodeURIComponent(o)):AJS.error('Cannot navigate to "contentlist" target for content type <'+o+">")}};t.addRoutes(i);n.enableApi();function s(t,n){e.ajax({url:a+"/rest/api/content/"+t,dataType:"json"}).done(n).fail((function(){AJS.error("Content not found (ID="+t+")")}))}function d(e){return/^ac:/.test(e)}}))}(AJS.$,require);
+}catch(e){WRMCB(e)};
+;
+try {
+/* module-key = 'com.atlassian.plugins.atlassian-connect-plugin:confluence-navigator-routes-v5', location = 'v5/js/confluence/navigator/context.js' */
+!function(t,n){"use strict";n(["ac/navigator/context","confluence/api/navigator-context"],(function(t,n){t.setContextFunction(n.getCurrent)}))}(AJS.$,require);
+}catch(e){WRMCB(e)};

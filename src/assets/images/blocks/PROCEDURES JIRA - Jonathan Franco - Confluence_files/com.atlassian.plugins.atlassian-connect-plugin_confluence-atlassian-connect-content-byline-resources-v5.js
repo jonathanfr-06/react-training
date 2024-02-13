@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-content-byline-resources-v5', location = 'v5/js/confluence/contentbyline/content-byline-view.js' */
+AJS.toInit((function(t){var n;AJS.bind("contentProperty.update",(function(e,a){if(a&&a.contentProperty&&a.contentProperty.key){var r=(n=n||WRM.data.claim("com.atlassian.plugins.atlassian-connect-plugin:confluence-atlassian-connect-content-byline-resources.connect-content-byline-data"))[a.contentProperty.key];if(r){var i=t(document.getElementById(r)),o=a.contentProperty.value,c=o.name,s=o.tooltip,l=o.icon;c&&c.value&&i.find("span").text(c.value);s&&s.value&&i.attr("title",s.value);l&&l.url&&i.find("img").attr("src",function(t,n){if(e=t,e.startsWith("http:")||e.startsWith("https:")||e.startsWith("data:"))return t;var e;return n.options.origin+(a=t,a.startsWith("/")?a:"/"+a);var a}(l.url,a.extension))}}}))}));
+}catch(e){WRMCB(e)};
