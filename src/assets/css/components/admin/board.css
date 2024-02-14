@@ -6,7 +6,7 @@
 }
 
 table {
-	width: 800px;
+	width: 80%;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -15,7 +15,7 @@ table {
 th,
 td {
 	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255, 255, 255, 0.158);
 	color: #fff;
 }
 
@@ -25,14 +25,15 @@ th {
 
 thead {
 	th {
-		background-color: #55608f;
+		background-color: #375af3;
+		font-weight: bold;
 	}
 }
 
 tbody {
 	tr {
 		&:hover {
-			background-color: rgba(255,255,255,0.3);
+			background-color: rgba(255, 255, 255, 0.083);
 		}
 	}
 	td {
@@ -45,7 +46,7 @@ tbody {
 				right: 0;
 				top: -9999px;
 				bottom: -9999px;
-				background-color: rgba(255,255,255,0.2);
+				background-color: rgba(255, 255, 255, 0.053);
 				z-index: -1;
 			}
 		}
@@ -53,20 +54,20 @@ tbody {
 }
 
 .board-admin-button-upd{
-	background-color: rgb(62, 220, 62);
+	background-color: #17B169;
 	border:1px solid white;
 }
 
 .board-admin-button-upd:hover{
-	background-color: rgb(35, 236, 35);
+	background-color: #00563B;
 }
 
 
 .board-admin-button-del{
-	background-color: rgb(139, 20, 20);
+	background-color: #D2122E;
 	border:1px solid white;
 }
 
 .board-admin-button-del:hover{
-	background-color: rgb(196, 8, 8);
+	background-color: #AA0000;
 }
