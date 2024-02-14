@@ -1,9 +1,11 @@
 import products from '../../../src/utils/products.js'
 import '../../../src/assets/css/components/admin/board.css'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 export function Board() {
     
+    const is_visible = 1;
+
     useEffect(() => {
         if(!localStorage.getItem('admin'))
         {
@@ -12,6 +14,7 @@ export function Board() {
     }, []);
 
     return (
+            
         <div className='board-admin'>
         <table>
             <thead>

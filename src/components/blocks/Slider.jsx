@@ -25,7 +25,7 @@ function Slider() {
 
     useEffect(() => {
         setImages([]);
-        getImgs();
+        // getImgs();
         getImg();
     }, []);
 

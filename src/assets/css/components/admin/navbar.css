@@ -1,0 +1,20 @@
+.admin-navbar-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.admin-navbar-nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.admin-navbar-li{
+    background-color: purple;
+    padding-top:30px;
+}
