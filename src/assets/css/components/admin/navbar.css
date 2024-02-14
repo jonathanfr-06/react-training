@@ -19,6 +19,8 @@
     padding:15px;
     width: 100%;
     border-left:1px solid white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .admin-navbar-li:hover{
