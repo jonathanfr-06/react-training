@@ -6,7 +6,8 @@ const products = [
     { id: 5, name: 'product 5', desc: 'Lorem ipsum dolor sit amet consectetur', category: "Test", price: 30 },
     { id: 6, name: 'product 6', desc: 'Lorem ipsum dolor sit amet consectetur', category: "Test", price: 30 },
     { id: 7, name: 'product 7', desc: 'Lorem ipsum dolor sit amet consectetur', category: "Test", price: 30 },
-    { id: 8, name: 'product 8', desc: 'Lorem ipsum dolor sit amet consectetur', category: "Test", price: 30 }
+    { id: 8, name: 'product 8', desc: 'Lorem ipsum dolor sit amet consectetur', category: "Test", price: 30 },
+    
 ]
 
 export default products;
