@@ -17,8 +17,8 @@
 }
 body{
   height: 100%;
-  background-image: radial-gradient(circle, #1a70ef, #1f74f1, #2477f3, #297bf5, #2d7ef7, #2d7ef7, #2d7ef7, #2d7ef7, #297bf5, #2477f3, #1f74f1, #1a70ef);
-}
+background-color: #1e40af
+;}
 .App {
   text-align: center;
 }
