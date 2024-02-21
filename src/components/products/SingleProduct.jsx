@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import products from '../../utils/products';
 import '../../../src/assets/css/components/products/SingleProduct.css'
+import '../../../src/index.css'
+
 import { useParams } from 'react-router-dom';
-import { getRandomPicture }from '../../services/lorempicsum';
+import { getRandomPicture } from '../../services/lorempicsum';
 
 function SingleProduct() {
     const { id } = useParams();
     const product = products.find(product => product.id === parseInt(id)); // Use parseInt to convert id to integer
     const [image, setImage] = useState("");
 
-    async function getImg()
-    {
-        let img = await getRandomPicture(400,400);
+    async function getImg() {
+        let img = await getRandomPicture(400, 400);
         setImage(img);
     }
     useEffect(() => {
         getImg()
-    },[]);
+    }, []);
 
 
     return (
         <div>
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
             {product ? (
                 <div className='product-page'>
                     <div className='product-page-div-img'>
