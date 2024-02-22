@@ -1,47 +1,39 @@
 import products from '../../../src/utils/products.js'
-import '../../../src/assets/css/components/admin/board.css'
-import React, { useEffect } from 'react';
+import TablesAdmin from '../reusables/admin/tables.jsx';
+import React, { useEffect, useState } from 'react';
+import { getFakeProducts, getFakeCarts, getFakeUsers} from '../../services/api/fakeStoreApi';
 
 export function Board() {
-    
-    // const is_visible = 1;
+    const [fakeProducts, setFakeProducts] = useState([]);
+    const [fakeUsers, setFakeUsers] = useState([]);
+
+    async function getUsers(){
+      const fkeUsers = await getFakeUsers();
+      setFakeUsers(fkeUsers)
+    }
+    async function getCarts(){
+        await getFakeCarts();
+    }
+
+    async function getRandomProducts(){
+         const fkeProducts =  await getFakeProducts();
+        setFakeProducts(fkeProducts);
+      }
 
     useEffect(() => {
-        if(!localStorage.getItem('admin'))
-        {
+        if (!localStorage.getItem('admin')) {
             console.log("not connected")
         }
+        getRandomProducts();
+        getCarts();
+        getUsers();
     }, []);
 
     return (
-            
-        <div className='board-admin'>
-            <table>
-                <thead>
-                    <tr>
-                        <th>id</th>
-                        <th>Name</th>
-                        <th>Category</th>
-                        <th>Desc</th>
-                        <th>Price</th>
-                        <th>Update</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {products.map((e) => (
-                        <tr key={e.id}>
-                            <td>{e.id}</td>
-                            <td>{e.name}</td>
-                            <td>{e.category}</td>
-                            <td>{e.desc}</td>
-                            <td>{e.price}</td>
-                            <td><button className='board-admin-button-upd'>Update</button></td>
-                            <td><button className='board-admin-button-del'>Delete</button></td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+
+        <div>
+            <TablesAdmin data={fakeProducts}/>
+            <TablesAdmin data={fakeUsers}/>
         </div>
     )
 }

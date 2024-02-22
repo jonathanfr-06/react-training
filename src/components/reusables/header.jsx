@@ -9,15 +9,14 @@ function Header() {
     const [is_logged, setIsLogged] = useState([]);
 
     useEffect(() => {
-        if(localStorage.getItem('admin'))
-        {
+        if (localStorage.getItem('admin')) {
             setIsLogged(1);
         }
     }, []);
 
     return (
-        <div className="header">
-            <nav className='navbar'>
+<div className="w-full flex items-center justify-between bg-blue-900">
+            <nav className='flex items-center'>
                 <Link to={'/'}><img className='image-logo' src={logo} alt='logo' /></Link>
                 <ul className='list_link'>
                     <li>
@@ -28,10 +27,10 @@ function Header() {
                         <Link to={"/register"} className='links'>S'inscrire</Link>
                     </li>
                     <li>
-                    <Link to={"/login"} className='links'>Connexion</Link></li>  
+                        <Link to={"/login"} className='links'>Connexion</Link></li>
                     {is_logged === 1 && (
-   <li>
-   <Link to={"/admin"} className='links'>Admin</Link></li> )}
+                        <li>
+                            <Link to={"/admin"} className='links'>Admin</Link></li>)}
                 </ul>
             </nav>
             <Searchbar />

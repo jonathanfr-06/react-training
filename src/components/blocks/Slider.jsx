@@ -14,13 +14,13 @@ function Slider() {
         }
     }
 
-    async function getImgs() {
-       const imagess= await getRandomListPictures(3);
-       for(let i = 0; i < imagess.length; i++ ){
-        setImages(prevImages => [...prevImages, imagess[i].download_url]);
-        console.log(imagess[i]);
-       }
-    }
+    // async function getImgs() {
+    //    const imagess= await getRandomListPictures(3);
+    //    for(let i = 0; i < imagess.length; i++ ){
+    //     setImages(prevImages => [...prevImages, imagess[i].download_url]);
+    //     console.log(imagess[i]);
+    //    }
+    // }
 
 
     useEffect(() => {
