@@ -8,8 +8,9 @@ function TablesAdmin({ data }) {
             const allKeys = data.reduce((keys, item) => {
                 return [...keys, ...Object.keys(item)];
             }, []);
-            const uniqueKeys = [...new Set(allKeys)]; // Get unique keys
+            const uniqueKeys = [...new Set(allKeys)];
             setKeys(uniqueKeys);
+
         }
     }, [data]);
 
@@ -41,7 +42,7 @@ function TablesAdmin({ data }) {
                                         </div>
                                     ) : (
                                         key === 'image' ? (
-                                            <img src={rowData[key]} alt={rowData[key]} /> // Render image if key is 'image'
+                                            <img src={rowData[key]} alt={rowData[key]} /> 
                                         ) : (
                                             rowData[key]
                                         )
