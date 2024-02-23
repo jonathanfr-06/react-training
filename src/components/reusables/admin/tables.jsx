@@ -10,10 +10,8 @@ function TablesAdmin({ data }) {
             }, []);
             const uniqueKeys = [...new Set(allKeys)];
             setKeys(uniqueKeys);
-
         }
     }, [data]);
-
     return (
         <div className='flex shadow-md sm:rounded-lg justify-center content-center'>
             <table className='w-5/6 text-sm text-left rtl:text-right text-white dark:text-gray-400'>
