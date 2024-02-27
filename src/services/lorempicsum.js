@@ -14,7 +14,6 @@ export async function getRandomListPictures(number) {
 
     const url = `https://picsum.photos/v2/list?page=1&limit=${number}`;
     const images = await getjson(url);
-    // console.log(images[0].url);
     return images;
 }
 
