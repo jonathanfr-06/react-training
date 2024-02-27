@@ -17,9 +17,9 @@ export function Board() {
         await getFakeCarts();
     }
 
-    const test2 = func => {
+    const showUsers = func => {
         func();
-        setCount(count => count - 1);     
+        setCount(1);     
     }
 
     async function getRandomProducts(){
@@ -27,9 +27,9 @@ export function Board() {
         setFakeProducts(fkeProducts);
       }
 
-    const test = func => {
+    const showProducts = func => {
         func();    
-        setCount(count => count + 1);
+        setCount(0);
     };
 
     useEffect(() => {
@@ -43,10 +43,9 @@ export function Board() {
 
     return (
         <div>
-            {count}
-            <NavBar test={test} test2={test2}/>
-            <TablesAdmin data={fakeProducts} />
-            <TablesAdmin data={fakeUsers} />
+            <NavBar showProducts={showProducts} showUsers={showUsers}/>
+            {count === 0 && <TablesAdmin data={fakeProducts} />}
+            {count > 0 && <TablesAdmin data={fakeUsers} />}
         </div>
     )
 }
